@@ -1,7 +1,7 @@
-# anidl-renamer
-
 > [!WARNING]
 > Every file in this repository – code, data, README, everything – was written by Claude (Anthropic's AI). No line was written by a human. Use at your own risk.
+
+# anidl-renamer
 
 Tampermonkey script for the AniWorld Downloader web UI. It adds a **📜 Rename ▾** button to
 every season (including "Movies"). Click it, pick your system, and a script is downloaded that
