@@ -9,9 +9,13 @@ and doesn't change the downloader.
 
 ## Install
 
-1. Install Tampermonkey in your browser.
-2. Tampermonkey → *Create a new script* → paste the contents of `anidl-renamer.user.js` → save.
+1. Install [Tampermonkey](https://www.tampermonkey.net/) in your browser.
+2. **[Click here to install the script](https://raw.githubusercontent.com/e1erman/anidl-renamer/main/anidl-renamer.user.js)**
+   and confirm with *Install* in the Tampermonkey dialog.
 3. Reload the web UI.
+
+Tampermonkey checks for new versions automatically and updates the script.
+To check right away: click the Tampermonkey icon → *Check for userscript updates*.
 
 It works on any address the web UI runs on: a local IP and port, `localhost`, your own domain,
 behind a reverse proxy or a login like Cloudflare Access. Nothing needs to be configured.
