@@ -13,11 +13,12 @@ and doesn't change the downloader.
 ## Install
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) in your browser.
-2. **[Click here to install the script](https://raw.githubusercontent.com/e1erman/anidl-renamer/main/anidl-renamer.user.js)**
+2. **[Click here to install the script](https://github.com/e1erman/anidl-renamer/releases/latest/download/anidl-renamer.user.js)**
    and confirm with *Install* in the Tampermonkey dialog.
 3. Reload the web UI.
 
-Tampermonkey checks for new versions automatically and updates the script.
+Tampermonkey checks for new versions automatically and updates the script whenever a new
+[release](https://github.com/e1erman/anidl-renamer/releases) is published.
 To check right away: click the Tampermonkey icon → *Check for userscript updates*.
 
 It works on any address the web UI runs on: a local IP and port, `localhost`, your own domain,
@@ -94,6 +95,19 @@ Placeholders: `{series}` `{year}` `{season}` `{episode}` `{title}`
 - If the new name already exists, the file is skipped.
 - Episodes without a title in the web UI are not renamed.
 - The Linux/macOS version also runs on the old Bash 3.2 that ships with macOS.
+
+## Releasing a new version
+
+Users only get updates from releases, so work on `main` doesn't reach them until it is released.
+
+1. Raise `@version` in `anidl-renamer.user.js` (e.g. `1.3.2` → `1.3.3`) and push to `main`.
+2. Create a release with a matching tag and attach the script:
+
+   ```bash
+   gh release create v1.3.3 anidl-renamer.user.js --title "v1.3.3" --notes "What changed"
+   ```
+
+The file must be attached as `anidl-renamer.user.js`, otherwise the update link doesn't find it.
 
 ## License
 
