@@ -80,16 +80,29 @@ map the share as a network drive (e.g. `Z:`) and open the folder from there.
 
 Click the Tampermonkey icon while the web UI is open:
 
-- **Name format for movies/extras**: default `{series} - {title}`
+- **Name format for movies/extras**: default `{series} S{season}E{episode} - {title}`
 - **Name format for seasons**: default `{series} S{season}E{episode} - {title}`
 
+Example: `Angel Beats! S00E001.mkv` → `Angel Beats! S00E001 - Stairway to Heaven [Episode 4.5] [OVA].mkv`
+
 Placeholders: `{series}` `{year}` `{season}` `{episode}` `{title}`
+
+`{episode}` is the number that is already in the file name, so it never changes.
+Keep `S{season}E{episode}` in your format: the downloader only recognises a file as downloaded
+by that part of its name. Without it, the web UI loses the downloaded tick and Auto-Sync may
+download the episode again.
 
 ## How files are found
 
 - The script searches its own folder and all subfolders for video files
   (`.mkv .mp4 .webm .avi .m4v`) with `S<season>E<episode>` in the name, e.g. `S00E001`.
   The number of zeros doesn't matter, but `E1` is never confused with `E10`.
+- Since downloader v5.5.0, an episode can have two numbers: the one the web UI shows
+  (from `[Episode 62]` in the English title, when there is one) and its number inside the
+  season. Older downloads use the second one. The script looks for both.
+- If a number could belong to two different episodes (e.g. an old `S02E062` that is episode 123,
+  while the web UI also shows an episode 62), the file is skipped with a message instead of
+  getting a wrong title.
 - If some matches have the series name in their path, only those are used.
   Still, it's best to run it in the series folder, not in the whole library.
 - If the new name already exists, the file is skipped.
