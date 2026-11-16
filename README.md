@@ -13,12 +13,12 @@ and doesn't change the downloader.
 ## Install
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) in your browser.
-2. **[Click here to install the script](https://github.com/e1erman/anidl-renamer/releases/latest/download/anidl-renamer.user.js)**
+2. **[Click here to install the script](https://github.com/eierman324/anidl-renamer/releases/latest/download/anidl-renamer.user.js)**
    and confirm with *Install* in the Tampermonkey dialog.
 3. Reload the web UI.
 
 Tampermonkey checks for new versions automatically and updates the script whenever a new
-[release](https://github.com/e1erman/anidl-renamer/releases) is published.
+[release](https://github.com/eierman324/anidl-renamer/releases) is published.
 To check right away: click the Tampermonkey icon → *Check for userscript updates*.
 
 It works on any address the web UI runs on: a local IP and port, `localhost`, your own domain,

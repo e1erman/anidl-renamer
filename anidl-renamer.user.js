@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         AniWorld Downloader – Rename Script
 // @namespace    anidl-renamer
-// @version      1.4.0
+// @version      1.4.1
 // @author       eierman
 // @license      MIT
-// @homepageURL  https://github.com/e1erman/anidl-renamer
-// @supportURL   https://github.com/e1erman/anidl-renamer/issues
-// @downloadURL  https://github.com/e1erman/anidl-renamer/releases/latest/download/anidl-renamer.user.js
-// @updateURL    https://github.com/e1erman/anidl-renamer/releases/latest/download/anidl-renamer.user.js
+// @homepageURL  https://github.com/eierman324/anidl-renamer
+// @supportURL   https://github.com/eierman324/anidl-renamer/issues
+// @downloadURL  https://github.com/eierman324/anidl-renamer/releases/latest/download/anidl-renamer.user.js
+// @updateURL    https://github.com/eierman324/anidl-renamer/releases/latest/download/anidl-renamer.user.js
 // @description  Adds a button to every season (including movies/extras) in the AniWorld Downloader web UI that downloads a script to rename the files with their real episode titles.
 // @match        *://*/*
 // @noframes
