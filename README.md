@@ -109,19 +109,6 @@ download the episode again.
 - Episodes without a title in the web UI are not renamed.
 - The Linux/macOS version also runs on the old Bash 3.2 that ships with macOS.
 
-## Releasing a new version
-
-Users only get updates from releases, so work on `main` doesn't reach them until it is released.
-
-1. Raise `@version` in `anidl-renamer.user.js` (e.g. `1.3.2` → `1.3.3`) and push to `main`.
-2. Create a release with a matching tag and attach the script:
-
-   ```bash
-   gh release create v1.3.3 anidl-renamer.user.js --title "v1.3.3" --notes "What changed"
-   ```
-
-The file must be attached as `anidl-renamer.user.js`, otherwise the update link doesn't find it.
-
 ## License
 
 [MIT](LICENSE)
