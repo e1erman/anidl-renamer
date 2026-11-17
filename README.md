@@ -3,7 +3,7 @@
 
 # anidl-renamer
 
-Tampermonkey script for the AniWorld Downloader web UI. It adds a **📜 Rename ▾** button to
+Tampermonkey script for the [AniWorld Downloader](https://github.com/phoenixthrush/AniWorld-Downloader) web UI. It adds a **📜 Rename ▾** button to
 every season (including "Movies"). Click it, pick your system, and a script is downloaded that
 renames that season's files with their real episode titles.
 
@@ -24,7 +24,7 @@ To check right away: click the Tampermonkey icon → *Check for userscript updat
 It works on any address the web UI runs on: a local IP and port, `localhost`, your own domain,
 behind a reverse proxy or a login like Cloudflare Access. Nothing needs to be configured.
 The script is loaded on every site, but it only becomes active when the page is the
-AniWorld Downloader web UI (it checks for `<meta name="application-name" content="AniWorld Downloader">`
+[AniWorld Downloader](https://github.com/phoenixthrush/AniWorld-Downloader) web UI (it checks for `<meta name="application-name" content="[AniWorld Downloader](https://github.com/phoenixthrush/AniWorld-Downloader)">`
 and `/static/common.js`). On all other sites it does nothing.
 
 Tampermonkey shows that the script "runs on all sites" because of this. If you prefer, you can
